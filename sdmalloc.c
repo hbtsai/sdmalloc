@@ -1,19 +1,18 @@
 #include "sdmalloc.h"
 
 /*
- * in auto-mode, sdmalloc allocates memory from SSD if
- * only $(percentabe) or $(gigabytes) available.
- * sdmalloc should decide the shreshold automatically.
- * It's pre-defined as 80% for now.
- *
- * priority flag:
- * 0 = naive malloc.
- * 1 = auto-mode
- * 2-10 = priority
- *   2: main memory (if main memory is saturated, this option
- *      becomes a pitfall)
- *   3: SSD
+ * interact with SDMAD (Software Defined Memory Allocator daemon),
  */
+
+
+
+/*
+ * socket client to find candidate memory device to allocate memory
+ */
+void find_candidate()
+{
+
+}
 
 void* auto_malloc(size_t len)
 {
