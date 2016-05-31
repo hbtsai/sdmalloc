@@ -99,7 +99,7 @@ void* nvm_malloc(size_t len)
   close(fd);
 
   // mmap the file
-ptr = mmap(0, len, PROT_READ| PROT_WRITE, MAP_PRIVATE, fd, 0)
+ptr = mmap(0, len, PROT_READ| PROT_WRITE, MAP_PRIVATE, fd, 0);
 
 
   return ptr;
