@@ -43,5 +43,5 @@ $(CLIENT): $(CLIENT_OBJECTS)
 
 .PHONY: clean
 clean: 
-	-rm $(LIB_SO) $(OBJECTS) $(DAEMON) $(CLIENT)
+	-rm -f $(LIB_SO) $(CLIENT_OBJECTS) $(DAEMON_OBJECTS) $(OBJECTS) $(DAEMON) $(CLIENT)
 
